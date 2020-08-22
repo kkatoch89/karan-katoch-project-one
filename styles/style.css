@@ -329,6 +329,7 @@ header h3 {
 /* SECTIONS GENERAL STYLES */
 section {
   background-color: #0f0632;
+  position: relative;
 }
 
 section p {
@@ -349,11 +350,31 @@ section h2 {
   margin-bottom: 0;
 }
 
+section .section-text-content {
+  /* height: 100%; */
+  padding: 0 10vw;
+}
+
+/* .section-text-content h2,
+.section-text-content p,
+.section-text-content a {
+  position: relative;
+  top: 100%;
+} */
+
 /* LINE-UP SECTION */
 .line-up-section .section-text-content {
   float: right;
-  width: 45%;
+  width: 50%;
+  padding-right: 5vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+/* .line-up-section .wrapper {
+
+} */
 
 .line-up-section .img-box {
   float: right;
@@ -361,9 +382,9 @@ section h2 {
   /* margin-right: -5.5%; */
 }
 
-.line-up-section .section-text-content {
+/* .line-up-section .section-text-content {
   padding-right: 5%;
-}
+} */
 
 /* 
 -Both sections 1 & 2 need to figure out how to have images outside wrapper.
@@ -373,7 +394,12 @@ section h2 {
 /* EXPERIENCE SECTION */
 .experiences-section .section-text-content {
   float: left;
-  width: 45%;
+  width: 50%;
+  padding-left: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
 }
 
 .experiences-section .img-box {
@@ -381,9 +407,9 @@ section h2 {
   width: 50%;
 }
 
-.experiences-section .section-text-content {
+/* .experiences-section .section-text-content {
   padding-left: 5%;
-}
+} */
 
 /* TICKETS SECTION */
 .tickets-section {
@@ -394,11 +420,12 @@ section h2 {
   float: left;
   width: calc(75% - 40px);
   margin: 70px 0 70px 40px;
+  padding: 0;
 }
 
-.tickets-section h2 {
+/* .tickets-section h2 {
   margin: 0;
-}
+} */
 
 .tickets-section .img-box {
   float: left;
@@ -438,14 +465,19 @@ section h2 {
 */
 
 /* GALLERY SECTION */
-.gram-section h2 {
-  text-align: center;
-  padding: 50px 0;
+.gram-section {
+  padding: 100px 0;
 }
 
-.gram-section ul {
+.gram-section h2 {
+  text-align: center;
+  /* padding: 50px 0; */
   margin-bottom: 50px;
 }
+
+/* .gram-section ul {
+  margin-bottom: 50px;
+} */
 
 .gram-section li {
   float: left;
