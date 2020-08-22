@@ -317,7 +317,6 @@ h1 {
   width: 320px;
   text-align: center;
   margin: 0 auto;
-  /* padding-top: 150px; */
 }
 
 h2 {
@@ -340,7 +339,6 @@ header h3 {
   position: relative;
   top: 45%;
   transform: translateY(-50%)
-  /* right: 50%; */
 }
 
 /* SECTIONS GENERAL STYLES */
@@ -367,13 +365,6 @@ section .section-text-content {
   padding: 0 10vw;
 }
 
-/* .section-text-content h2,
-.section-text-content p,
-.section-text-content a {
-  position: relative;
-  top: 100%;
-} */
-
 /* LINE-UP SECTION */
 .line-up-section .section-text-content {
   float: right;
@@ -394,15 +385,6 @@ section .section-text-content {
   /* margin-right: -5.5%; */
 }
 
-/* .line-up-section .section-text-content {
-  padding-right: 5%;
-} */
-
-/* 
--Both sections 1 & 2 need to figure out how to have images outside wrapper.
--Space above headings in both sections
-*/
-
 /* EXPERIENCE SECTION */
 .experiences-section .section-text-content {
   float: left;
@@ -419,10 +401,6 @@ section .section-text-content {
   width: 50%;
 }
 
-/* .experiences-section .section-text-content {
-  padding-left: 5%;
-} */
-
 /* TICKETS SECTION */
 .tickets-section {
   background-color: #08080b;
@@ -435,10 +413,6 @@ section .section-text-content {
   padding: 0;
 }
 
-/* .tickets-section h2 {
-  margin: 0;
-} */
-
 .tickets-section .img-box {
   float: left;
   width: 25%;
@@ -448,19 +422,32 @@ section .section-text-content {
 /* ICON LINKS SECTION */
 .icon-links-section {
   background-color: #3d0369;
+  padding: 100px 15%;
+}
+
+.icon-links-section ul {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* border: 3px solid maroon; */
 }
 
 .icon-links-section li {
   float: left;
-  width: calc((100% - 300px) / 3);
-  margin: 100px 50px;
-  padding: 10px 0;
+  width: calc((100% - 2%) / 3);
+  margin-right: 1%;
+  padding: 0 50px;
   text-align: center;
+  /* border: 3px solid orangered; */
+}
+
+.icon-links-section li:nth-child(3) {
+  margin-right: 0;
 }
 
 .icon-links-section a {
-  padding: 20px;
-  display: block;
+  display: inline-block;
+  padding: 5px;
+  /* border: 2px solid royalblue; */
 }
 
 .icon-links-section i {
@@ -469,6 +456,8 @@ section .section-text-content {
 
 .icon-links-section p {
   font-weight: 700;
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 /* 
@@ -487,10 +476,6 @@ section .section-text-content {
   margin-bottom: 50px;
 }
 
-/* .gram-section ul {
-  margin-bottom: 50px;
-} */
-
 .gram-section li {
   float: left;
   width: calc((100% - 40px) / 3);
@@ -506,13 +491,18 @@ footer {
   background-color: #3d0369;
 }
 
+footer p {
+  margin-top: 10px;
+  line-height: 30px;
+}
+
 .contact-info-box, .subscribe-box {
   float: left;
   width: 50%;
-  border: 2px solid orangered;
+  margin: 35px 0 50px;
 }
 
-.copyright-box {
+.footer-bottom *{
   display: block;
   background-color: #0f0632;
   text-align: center;
@@ -520,20 +510,31 @@ footer {
   font-family: 'Monserrat', sans-serif;
   font-weight: 700;
   line-height: 30px;
+  margin: 0;
+}
+
+.footer-bottom p {
+  font-size: 10px;
+  border-top: 2px solid rgba(61, 3, 105, .2);
 }
 
 .subscribe-box input {
   width: 80%;
-  height: 30px;
+  height: 40px;
+  padding: 20px;
   border: none;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   float: left;
 }
 
+.subscribe-box ::placeholder {
+  color: black;
+}
+
 .subscribe-box button {
   width: 20%;
-  height: 30px;
+  height: 40px;
   border: none;
   cursor: pointer;
   background-color: #9200ff;
@@ -543,5 +544,5 @@ footer {
   float: left;
 }
 
-
+/* MEDIA QUERIES */
 
