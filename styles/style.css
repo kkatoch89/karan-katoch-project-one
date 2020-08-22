@@ -273,22 +273,15 @@ p {
   max-width: 1200px;
 }
 
-/* HEADER */
-header {
-  height: 90vh;
-  background-image: url('../assets/hero-image.png');
-  background-size: cover;
-  background-position: center;
-}
-
-header nav {
+/* NAVS */
+nav {
   float: left;
   width: 100%;
   position: relative;
   padding-top: 30px;
 }
 
-header ul {
+nav ul {
   clear: left;
   float: left;
   position: relative;
@@ -296,7 +289,7 @@ header ul {
   text-align: center;
 }
 
-header li {
+nav li {
   /* display: block; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -307,12 +300,29 @@ header li {
   margin: 0 15px;
 }
 
+/* HEADER */
+header {
+  height: 90vh;
+  background-image: url('../assets/hero-image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+header .wrapper {
+  height: 100%;
+}
+
 h1 {
   font-size: 80px;
   width: 320px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 150px;
+  /* padding-top: 150px; */
+}
+
+h2 {
+  font-size: 52px;
+  margin-bottom: 0;
 }
 
 header h3 {
@@ -324,6 +334,13 @@ header h3 {
   text-transform: lowercase;
   margin: 0 auto;
   background-color: #9200ff;
+}
+
+.header-text {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%)
+  /* right: 50%; */
 }
 
 /* SECTIONS GENERAL STYLES */
@@ -343,11 +360,6 @@ section p {
   padding: 10px 20px;
   line-height: 40px;
   border-radius: 2px;
-}
-
-section h2 {
-  font-size: 52px;
-  margin-bottom: 0;
 }
 
 section .section-text-content {
@@ -488,3 +500,48 @@ section .section-text-content {
 .gram-section li:last-of-type {
   margin-right: 0;
 }
+ 
+/* FOOTER */
+footer {
+  background-color: #3d0369;
+}
+
+.contact-info-box, .subscribe-box {
+  float: left;
+  width: 50%;
+  border: 2px solid orangered;
+}
+
+.copyright-box {
+  display: block;
+  background-color: #0f0632;
+  text-align: center;
+  text-transform: initial;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.subscribe-box input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  float: left;
+}
+
+.subscribe-box button {
+  width: 20%;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #9200ff;
+  font-family: "Iceberg", cursive;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+}
+
+
+
