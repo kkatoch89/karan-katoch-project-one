@@ -411,13 +411,19 @@ section .section-text-content {
 .tickets-section .section-text-content {
   float: left;
   width: calc(75% - 40px);
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 0;
 }
 
 .tickets-section .img-box {
   float: left;
   width: 25%;
+  margin-right: 20px;
+  margin-top: calc(15px + (1vw / 100%));
+}
+
+.tickets-section img {
+  display: block;
 }
 
 /* ICON LINKS SECTION */
@@ -551,59 +557,44 @@ footer p {
 
 @media (max-width: 1000px) {
   .half-n-half-box .img-box,
-  .half-n-half-box .text-half {
+  .half-n-half-box .text-half,
+  .tickets-section .img-box,
+  .tickets-section .section-text-content {
     width: 100%;
     height: auto;
     float: none;
   }
 
-  .half-n-half-box .section-text-content {
+  .half-n-half-box .section-text-content,
+  .tickets-section .section-text-content {
     padding: 50px 5vw;
   }
-}
-/* @media (max-width: 1200px) {
-  h2 {
-    font-size: 42px;
-  }
-
-  p {
-    font-size: 15px;
-  } 
-
-  .read-more {
-    font-size: 18px;
-    padding: 5px 10px;
-    line-height: 30px;
-  }
-
-  section .section-text-content {
-    padding: 0 5vw;
-  }
-
-  section .section-text-content p {
-    margin-bottom: 10px;
-  }
+  
 }
 
-@media (max-width: 775px) {
-  .half-n-half-sections .img-box,
-  .half-n-half-sections .section-text-content,
-  .tickets-section .img-box,
-  .tickets-section .section-text-content {
+@media (max-width: 850px) {
+
+  .icon-links-section li {
     float: none;
-    position: static;
+    position: ;
     width: 100%;
-    margin: 0;
-  } */
+    margin: 40px 0;
+  }
 
-  /* .icon-links-section li {
+  footer h2 {
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .subscribe-box input {
+    width: 100%;
     float: none;
+  }
+
+  .subscribe-box .btn {
     width: 100%;
-  } */
-/* 
-  .icon-links-section li:nth-child(2) {
-    margin: 30px 0;
-  } */
-
-
+  }
 }
