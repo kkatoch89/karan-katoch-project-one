@@ -367,39 +367,35 @@ section .section-text-content {
 }
 
 /* HALF & HALF SECTIONS COMMON STYLES */
-.half-n-half-sections .section-text-content,
-.half-n-half-sections .img-box {
+.half-n-half-box .img-box,
+.half-n-half-box .text-half {
   width: 50%;
+  height: 37.5vw;
 }
 
-.half-n-half-sections .section-text-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #0f0632;
+.half-n-half-box .section-text-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-/* LINE-UP SECTION */
-.line-up-section .section-text-content {
+.line-up-section .img-box,
+.line-up-section .text-half {
   float: right;
+  display: table;
+}
+
+.line-up-section .section-text-content {
   padding-right: 5vw;
 }
 
-.line-up-section .img-box {
-  float: right;
-  /* margin-right: -5.5%; */
+.experiences-section .img-box,
+.experiences-section .text-half {
+  float: left;
+  display: table;
 }
 
-/* EXPERIENCE SECTION */
 .experiences-section .section-text-content {
-  float: left;
   padding-left: 5vw;
-  left: 50%;
-}
-
-.experiences-section .img-box {
-  float: left;
-  width: 50%;
 }
 
 /* TICKETS SECTION */
@@ -552,7 +548,20 @@ footer p {
 /* MEDIA QUERIES */
 
 /* TABLET (LANDSCAPE)/SMALL NOTEBOOK QUERIES */
-@media (max-width: 1200px) {
+
+@media (max-width: 1000px) {
+  .half-n-half-box .img-box,
+  .half-n-half-box .text-half {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .half-n-half-box .section-text-content {
+    padding: 50px 5vw;
+  }
+}
+/* @media (max-width: 1200px) {
   h2 {
     font-size: 42px;
   }
@@ -585,7 +594,7 @@ footer p {
     position: static;
     width: 100%;
     margin: 0;
-  }
+  } */
 
   /* .icon-links-section li {
     float: none;
