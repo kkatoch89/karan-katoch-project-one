@@ -231,6 +231,8 @@ font-family: 'Montserrat', sans-serif; */
 
 html {
   font-size: 62.5%;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -260,6 +262,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
 }
 
 a {
@@ -306,6 +309,10 @@ nav li {
   margin: 0 15px;
 }
 
+nav a {
+  padding: 5px 10px;
+}
+
 /* HEADER */
 header {
   height: 90vh;
@@ -350,6 +357,10 @@ section {
 
 section p {
   margin: 10px 0 25px;
+}
+
+.read-more-box {
+  text-align: left;
 }
 
 .read-more {
@@ -553,8 +564,6 @@ footer p {
 
 /* MEDIA QUERIES */
 
-/* TABLET (LANDSCAPE)/SMALL NOTEBOOK QUERIES */
-
 @media (max-width: 1000px) {
   .half-n-half-box .img-box,
   .half-n-half-box .text-half,
@@ -568,6 +577,7 @@ footer p {
   .half-n-half-box .section-text-content,
   .tickets-section .section-text-content {
     padding: 50px 5vw;
+    margin: 0;
   }
   
 }
@@ -596,5 +606,67 @@ footer p {
 
   .subscribe-box .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  header nav {
+    display: none;
+  }
+
+  .read-more-box {
+    text-align: center;
+  }
+
+  .gram-section li:last-of-type {
+    display: none;
+  }
+
+  .gram-section li {
+    width: calc(50% - 2.5vw);
+    margin: 0 1.25vw;
+  }
+
+  footer nav,
+  .contact-info-box{
+    margin-bottom: 40px;
+  }
+
+  footer nav li {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  footer nav a {
+    padding: 15px 10px;
+  }
+
+  footer .wrapper {
+    width: 95%;
+  }
+
+  footer .contact-info-box,
+  footer .subscribe-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h3 {
+    font-size: 25px;
+    width: 80vw;
   }
 }
