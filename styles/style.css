@@ -225,10 +225,7 @@ html {
 
 /* #endregion */
 
-/* font-family: 'Iceberg', cursive;
-
-font-family: 'Montserrat', sans-serif; */
-
+/* GENERAL STYLING */
 html {
   font-size: 62.5%;
   overflow: auto;
@@ -251,7 +248,6 @@ h3 {
 h2 {
   font-size: 52px;
   margin-bottom: 0;
-  /* white-space: nowrap; */
 }
 
 img {
@@ -262,7 +258,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
 
 a {
@@ -299,7 +294,6 @@ nav ul {
 }
 
 nav li {
-  /* display: block; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -373,11 +367,10 @@ section p {
 }
 
 section .section-text-content {
-  /* height: 100%; */
   padding: 0 10vw;
 }
 
-/* HALF & HALF SECTIONS COMMON STYLES */
+/* HALF & HALF (LINE-UP & EXPERIENCES) SECTIONS COMMON STYLES */
 .half-n-half-box .img-box,
 .half-n-half-box .text-half {
   width: 50%;
@@ -389,6 +382,8 @@ section .section-text-content {
   vertical-align: middle;
 }
 
+/* LINE-UP SECTION */
+
 .line-up-section .img-box,
 .line-up-section .text-half {
   float: right;
@@ -399,6 +394,7 @@ section .section-text-content {
   padding-right: 5vw;
 }
 
+/* EXPERIENCES SECTION */
 .experiences-section .img-box,
 .experiences-section .text-half {
   float: left;
@@ -444,9 +440,7 @@ section .section-text-content {
 }
 
 .icon-links-section ul {
-  /* max-width: 900px; */
   margin: 0 auto;
-  /* border: 3px solid maroon; */
 }
 
 .icon-links-section li {
@@ -455,7 +449,6 @@ section .section-text-content {
   margin-right: 1%;
   padding: 0 50px;
   text-align: center;
-  /* border: 3px solid orangered; */
 }
 
 .icon-links-section li:nth-child(3) {
@@ -465,7 +458,6 @@ section .section-text-content {
 .icon-links-section a {
   display: inline-block;
   padding: 5px;
-  /* border: 2px solid royalblue; */
 }
 
 .icon-links-section i {
@@ -478,11 +470,6 @@ section .section-text-content {
   white-space: nowrap;
 }
 
-/* 
--Need to get links/icons closer
--Too much padding on the blocks of links
-*/
-
 /* GALLERY SECTION */
 .gram-section {
   padding: 100px 0;
@@ -490,7 +477,6 @@ section .section-text-content {
 
 .gram-section h2 {
   text-align: center;
-  /* padding: 50px 0; */
   margin-bottom: 50px;
 }
 
@@ -586,7 +572,6 @@ footer p {
 
   .icon-links-section li {
     float: none;
-    position: ;
     width: 100%;
     margin: 40px 0;
   }
@@ -654,6 +639,15 @@ footer p {
     margin: 0;
   }
 
+  footer .subscribe-box input {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  footer .subscribe-box .btn {
+    font-size: 20px;
+  }
+
   .footer-bottom {
     margin-top: 40px;
   }
@@ -662,11 +656,30 @@ footer p {
 
 @media (max-width: 500px) {
   header h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
 
   header h3 {
     font-size: 25px;
     width: 80vw;
+  }
+}
+
+@media (max-width: 410px) {
+  
+  header .wrapper {
+    width: 100vw;
+  }
+  
+  header h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  footer nav a {
+    font-size: 14px;
   }
 }
